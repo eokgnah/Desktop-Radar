@@ -61,11 +61,11 @@ const int CENTER_X = 120;
 const int CENTER_Y = 120;
 const int RADAR_R  = 112;
 
-float centerLat = 49.4521;
-float centerLon = 11.0767;
+float centerLat = 48.35454;
+float centerLon = 11.7897;
 float radarRadiusKm = 50.0;
 
-unsigned long updateIntervalMs = 15000;
+unsigned long updateIntervalMs = 60000;
 unsigned long lastUpdate = 0;
 unsigned long lastAnimDraw = 0;
 
@@ -167,7 +167,7 @@ void loadSettings() {
   centerLon = prefs.getFloat("lon", 11.7897);
   radarRadiusKm = prefs.getFloat("radius", 50.0);
 
-  int intervalSec = prefs.getInt("interval", 15);
+  int intervalSec = prefs.getInt("interval", 60);
   if (intervalSec < 5) intervalSec = 5;
   if (intervalSec > 300) intervalSec = 300;
   updateIntervalMs = intervalSec * 1000UL;
