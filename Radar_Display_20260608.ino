@@ -163,8 +163,8 @@ void showIpScreen() {
 void loadSettings() {
   prefs.begin("radar", false);
 
-  centerLat = prefs.getFloat("lat", 49.4521);
-  centerLon = prefs.getFloat("lon", 11.0767);
+  centerLat = prefs.getFloat("lat", 48.35454);
+  centerLon = prefs.getFloat("lon", 11.7897);
   radarRadiusKm = prefs.getFloat("radius", 50.0);
 
   int intervalSec = prefs.getInt("interval", 15);
