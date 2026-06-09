@@ -27,7 +27,7 @@ The radar shows live aircraft positions around your location using data from the
 
 ### Required Parts
 
-- ESP32-S3 development board
+- ESP32-S3 super-mini
 - Round TFT display
 - USB cable
 - 3D printed enclosure
